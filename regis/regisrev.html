@@ -1,0 +1,149 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORM PENDAFTARAN</title>
+        <link rel="stylesheet" href="style2rev.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+</head>
+<body>
+      
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>IMASYOURLEAGUE</a></div><img class=menu-icon src="../img/menu.png" onclick=menutoggle()>
+            <div class="menu">
+                <ul id="menuicon">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Info</a>
+                        <div class="dropdown-content">
+                            <a href="../index.html#lat">Jadwal Latihan</a>
+                            <a href="../index.html#lok">Lokasi</a>
+                            <a href="../index.html#rules">Peraturan Anggota</a>
+                        </div>
+                    </li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a href="regisrev.html">Join US!</a></li>
+                </ul>
+                <script>
+                    var menuicon = document.getElementById("menuicon");
+                    menuicon.style.maxHeight = "0px";
+            
+                    function menutoggle() {
+                        if (menuicon.style.maxHeight == "0px") {
+                            menuicon.style.maxHeight = "600px";
+                        } else {
+                            menuicon.style.maxHeight = "0px";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <div class="regform"><h1>Registrasi</h1></div>
+    <div class="main">
+        <form action="ouputrev.php" method="POST">
+        <div id="name">
+            <h1 class="name">Nama</h1>
+            <input class="namadepan" type="text" placeholder="Masukan Nama Lengkap" name="name" maxlength="30" required><br>
+        </div>
+
+        <h1 class="name">Jenis Kelamin </h1>
+        <input type="radio" name="gender" value="Laki-Laki" class="gen" required> Laki-Laki<input class="gen" type="radio" name="gender" value="Perempuan" required>Perempuan
+
+        <h1 class="name">Tempat Lahir</h1>
+        <input class="alamat" type="text" placeholder="Masukan Tempat Lahir" name="place" maxlength="15" required>
+
+        <h1 class="name">Tanggal Lahir</h1>
+        <input class="number" type="date" name="date" required>
+
+        <h1 class="name">No. Telepon</h1>
+        <input class="number" type="number" placeholder="08xxxxx" name="hp"  maxlength="14" required>
+
+        <h1 class="name">Nama Orangtua</h1>
+        <input class="alamat" type="text" placeholder="Masukan Nama Orang Tua" name="parent" maxlength="20" required>
+
+        <h1 class="name">No. Telp Orangtua</h1>
+        <input class="number" type="number" placeholder="08xxxxxxx" name="telp" maxlength="1" required>
+
+        <h1 class="name">Provinsi</h1>
+        <select class="option" name="prov" required>
+                <option value="-Pilih-">Pilih</option>
+                <option value="DKI JAKARTA">DKI JAKARTA</option>
+                <option value="JAWA BARAT">JAWA BARAT</option>
+        </select>   
+
+        <h1 class="name">Kota</h1>
+        <select class="option" name="kota"required>
+            <option disabled="disabled" selected="selected">-Pilih</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Kota Bekasi">Kota Bekasi</option>
+            <option value="Kabupaten Bekasi">Kabupaten Bekasi</option>
+            <option value="Kota Bogor">Kota Bogor</option>
+            <option value="Kabupaten Bogor">Kabupaten Bogor</option>
+            <option value="Depok">Depok</option>
+        </select>   
+
+        <h1 class="name">Kecamatan</h1>
+        <input class="alamat" type="text" placeholder="Masukan Kecamatan" name="kec" maxlength="20" required>
+
+        <h1 class="name">Kelurahan/Desa</h1>
+        <input class="alamat" type="text" placeholder="Masukan Kelurahan/Desa" name="des" maxlength="20" required>
+
+        <h1 class="name">Alamat</h1>
+        <textarea name="addres" id="addres" cols="45" rows="10" placeholder="Masukan Alamat Anda" required></textarea>
+
+        <h1 class="name">Email</h1> 
+        <input class="email" type="email" placeholder="example@gmail.com" name="email" maxlength="30" required>
+
+        <button class="submit" value="daftar">Daftar</button>
+        </form>
+    </div>
+    <div>
+        <br>
+        <br>
+    </div>
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <h2 class="deskripsi">Contact</h2>
+                <div class="footer-section">
+                    <p class="c">Contact Us</p>
+                    <a class="add" href="https://www.google.com/maps/dir/-6.2211353,107.0185126/-6.2395539,106.882773/@-6.2397812,106.8795216,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">Jl. Inspeksi Saluran Kali Malang No.3A, RT.1/RW.1, Cipinang Besar Sel., Kecamatan Jatinegara</a>
+                    <p>Kode Pos: 13620</p>
+                </div>
+                <div class="footer-section">
+                    <p class="d">Follow Us</p>
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/imasyourleague"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/imasyourleague/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/iMasyour/featured"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-google"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/iMasyourLeague"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/iMasyourLeague"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

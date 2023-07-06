@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMasyourLeague</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+</head>
+<body>
+
+    <!-- Untuk Navigasi Bar -->
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>IMasyourLeague</a></div><img class=menu-icon src="img/menu.png" onclick=menutoggle()>
+            <div class="menu">
+                <ul id="menuicon">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Info</a>
+                        <div class="dropdown-content">
+                            <a href="#lat">Jadwal Latihan</a>
+                            <a href="#lok">Lokasi Latihan</a>
+                            <a href="#rules">Peraturan Anggota</a>
+                        </div>
+                    </li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="regis/regisrev.html">Join US!</a></li>
+                </ul>
+                <!-- JS Untuk tombol menu -->
+                <script>
+                    var menuicon = document.getElementById("menuicon");
+                    menuicon.style.maxHeight = "0px";
+            
+                    function menutoggle() {
+                        if (menuicon.style.maxHeight == "0px") {
+                            menuicon.style.maxHeight = "600px";
+                        } else {
+                            menuicon.style.maxHeight = "0px";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </nav>
+
+    <!-- untuk home -->
+    <div class="banner">
+        <section id="home">
+            <div class="kolom">
+                <p class="deskripsi">#LEAGUEWITHPRIDE</p>
+                <h2>Mau loe newbie, atau mungkin udah pemain divisi sekalipun, pastinya belum tentu bisa menang disini</h2>
+            </div>
+            <div style="text-align: right">
+                <iframe class="yt" width="510px" height="295px" src="https://www.youtube.com/embed/dP06VlqJf8s?autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <!-- untuk about -->
+        <section id="about">
+            <div class="kolom">
+                <div class="abt">
+                    <h1>About</h1>
+                    <p size ="15">IMasyourLeague adalah komunitas basket berdomisili daerah Jakarta Timur. Didirikan pada tahun 19 Agustus 2019, oleh 2 orang mahasiswa yang hobi bermain baset yg bernama Irvan Mansyur dan Alvin Putra. Tujuan utama IMasyourLeague didirikan bertujuan untuk menyatukan sebagian besar para pemain basket yang berada didaerah Jabodatabek, dan bertukar pengalaman sesama pemain lainnya.</p>
+                    <p size="15">IMasyourLeague banyak diisi dengan pemain yang berusia sekitar 19 sampai 28 tahun dan tidak banyak juga orang yang berusia 30 tahun ke atas bermain di komunitas ini. IMasyourLeague berdiri dari 2019 sampai sekarang sudah memiliki kurang lebih 280 orang anggota yang berasal dari penjuru daerah Jabodetabek dan banyak juga anak perantau yang datang ke Jakarta dari penjuru daerah datang untuk bermain di komunitas ini. IMasyourLeague tidak memilih milih pemain yang hebat atau tidak untuk bisa join ke komunitas ini karena tujuan komunitas ini berdiri bukan hanya untuk menyatukan seluruh pemain tapi juga untuk belajar bersama sama agar bisa bermain basket dengan benar.</p>
+                </div>
+            </div>
+            <img class="logoim" src="img/imas.png"/>
+        </section>
+
+        <!-- Untuk Visi dan Misi -->
+        <div id="visi">
+            <div class="kolom">
+                <div class="visi">
+                    <h1>Visi</h1> <br>
+                    <p>Mempersatukan pemain pemain basket yang ada di daerah jabodetabek dan menimba ilmu baru dan mencari pengalaman baru sesama pemain</p>
+
+                    <h1>Misi</h1> <br>
+                    <p>Menciptakan pemain pemain berkualitas secara skill individual serta attitude pemain yang berkualitas tinggi</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Untuk Latihan -->
+        <div id="lat">
+            <div class="kolom">
+                <div class="lat">
+                    <h1>Jadwal Latihan</h1>
+                    <table>
+                        <tr class="uu">
+                            <td>Hari</td>
+                            <td>Jam</td>
+                        </tr>
+                        <tr>
+                            <td>Sabtu</td>
+                            <td>15.00 - Selesai</td>
+                        </tr>
+                        <tr>
+                            <td>Minggu</td>
+                            <td>19.30 - Selesai</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Untuk Lokasi -->
+        <div id="lok">
+            <div class="kolom">
+                <div class="lokasi">
+                    <h1>Lokasi Latihan</h1>
+                    <table class="lok">
+                        <tr class="uu">
+                            <td>Hari</td>
+                            <td>Lokasi</td>
+                        </tr>
+                        <tr class="lop">
+                            <td>Sabtu</td>
+                            <td><a class="lop" href="https://goo.gl/maps/qsbVRhcKNrpkYui4A"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63461.71702013757!2d106.86495174237123!3d-6.216521397924111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3503dbb7f69%3A0x9c165a76ee1cd9b!2sGelanggang%20Remaja%20Duren%20Sawit!5e0!3m2!1sen!2sid!4v1654672251073!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>Gor Gelanggang Remaja Duren Sawit</a></td>
+                        </tr>
+                        <tr class="lop">
+                            <td>Minggu</td>
+                            <td><a class="lop" href="https://g.page/tifosisportcenter?share"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.702311328394!2d106.9209079!3d-6.2405762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6b800e6eb55c42a!2sTifosi%20Sport%20Center!5e0!3m2!1sen!2sid!4v1654672371617!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>Tifosi Sport Center</a></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Untuk Rules -->
+        <div id="rules">
+            <div class="kolom">
+                <div class="rules">
+                    <h1>Peraturan Anggota</h1>
+                    <p class="r">1.	Anggota wajib menjaga nama baik dan mengharumkan nama IMasyourLeauge<br>
+                        2.	Anggota melakukan latihan untuk meningkatkan kualitas performa sesuai jadwal latihan yang ditetapkan serta menjaga kesehatan, skill dan fisiknya.<br>
+                        3.	Anggota harus melakukan latihan rutin, serta setiap hari tetap melakukan latihan untuk menjaga kestabilan tubuh.<br>
+                        4.	Anggota harus mampu menjaga pola makan sehari-hari agar kondisi tubuh tidak terjadi kekurangan atau kelebihan berat badan. Asupan gizi seorang pemain juga harus sesuai dengan tenaga yang dikeluarkan saat latihan maupun saat menghadapi pertandingan.<br>
+                        5.	Dilarang mengkonsumsi alkohol, narkoba dan berbagai pola perilaku buruk lainnya.<br>
+                        6.	Pemain harus disiplin dalam hal waktu. <br>
+                        7.	Tunduk dan taat kepada orang yang lebih tua.<br>
+                        8.	Wajib membayar iuran tepat waktu sesuai ketentuan yang ditetapkan perkumpulan.<br>
+                        9.	Apabila pemain ingin keluar dan pindah ke perkumpulan bola basket lain maka akan dikenakan peraturan yang ditetapkan.<br>
+                        10.	Apabila pemain mengundurkan diri dan tidak pindah ke perkumpulan lain, maka status masih dalam anggota.<br>
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Untuk Gallery -->
+        <div id="gallery">
+            <h2>Gallery</h2>    
+            <div class="container">
+                <div class="card">
+                    <a href="#ft1">
+                        <img src="img/gallery/ft1.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>12 Februari 2022</p>
+                        </div>
+                        <div class="overlay" id="ft1">
+                            <img src="img/ft1.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft2">
+                        <img src="img/gallery/ft2.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>21 Januari 2022</p>
+                        </div>
+                        <div class="overlay" id="ft2">
+                            <img src="img/ft2.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft3">
+                        <img src="img/gallery/ft3.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>21 Januari 2022</p>
+                        </div>
+                        <div class="overlay" id="ft3">
+                            <img src="img/ft3.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft4">
+                        <img src="img/gallery/ft4.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>1 November 2021</p>
+                        </div>
+                        <div class="overlay" id="ft4">
+                            <img src="img/ft4.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft5">
+                        <img src="img/gallery/ft5.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>18 Febuari 2020</p>
+                        </div>
+                        <div class="overlay" id="ft5">
+                            <img src="img/ft5.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft6">
+                        <img src="img/gallery/ft6.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>2 Maret 2020</p>
+                        </div>
+                        <div class="overlay" id="ft6">
+                            <img src="img/ft6.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft7">
+                        <img src="img/gallery/ft7.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>2 Maret 2020</p>
+                        </div>
+                        <div class="overlay" id="ft7">
+                            <img src="img/ft7.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft8">
+                        <img src="img/gallery/ft8.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>20 Maret 2020</p>
+                        </div>
+                        <div class="overlay" id="ft8">
+                            <img src="img/ft8.jpg">
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="#ft9">
+                        <img src="img/gallery/ft9.jpg">
+                        <div class="img-title">
+                            <h3>Fun Game</h3>
+                            <p>19 Maret 2020</p>
+                        </div>
+                        <div class="overlay" id="ft9">
+                            <img src="img/ft9.jpg">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Untuk Close overlay menggunakan js -->
+            <script>
+                const elementclose = document.getElementsByClassName('overlay');
+                
+                for (let i = 0; i < elementclose.length; i++) {
+                    elementclose[i].addEventListener('click', function() {
+                        let url = window.location.href.substr(0, window.location.href.indexOf('#'))
+                        window.location = url
+                    });
+                }
+            </script>
+        </div> 
+
+    <!-- Untuk Contact -->
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <h2 class="deskripsi">Contact</h2>
+                <div class="footer-section">
+                    <p class="c">Contact Us</p>
+                    <a class="add" href="https://www.google.com/maps/dir/-6.2211353,107.0185126/-6.2395539,106.882773/@-6.2397812,106.8795216,12z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">Jl. Inspeksi Saluran Kali Malang No.3A, RT.1/RW.1, Cipinang Besar Sel., Kecamatan Jatinegara</a>
+                    <p>Kode Pos: 13620</p>
+                </div>
+                <div class="footer-section">
+                    <p class="d">Follow Us</p>
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/imasyourleague"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/imasyourleague/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/iMasyour/featured"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-google"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/iMasyourLeague"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/iMasyourLeague"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
